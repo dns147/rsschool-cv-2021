@@ -2,6 +2,17 @@ body {
 	margin: 0;
 }
 
+figure {
+	float: right;
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
 .master {
 	width: 75%;
 	position: absolute;
@@ -25,9 +36,4 @@ body {
 .list ul {
 	list-style-type: none;
     padding: 0;
-}
-
-.foto {
-	float: right;
-    margin: 0;
 }
