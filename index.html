@@ -51,10 +51,26 @@
 		<section>
 			<h2>Code examples</h2>
 			<hr>
-			<ul>
-				<li><a href="https://github.com/dns147/dns147.github.io/blob/main/script/index.js" title="Github">https://github.com/dns147/dns147.github.io/blob/main/script/index.js</a></li>
-				<li><a href="https://github.com/dns147/Learn-Center/blob/main/index.html" title="Github">https://github.com/dns147/Learn-Center/blob/main/index.html</a></li>
-			</ul>
+			<details class="spoiler">
+				<summary>Java Script</summary>
+				<pre>
+					<code>
+  function rgb(r, g, b) {
+    const makeHex = (num) => {
+      if (num < 0 ) {
+        return "00"; 
+      } else if (num > 255) {
+        return "FF";
+      }
+
+      return ('0' + Number(num).toString(16)).slice(-2).toUpperCase();
+    }
+
+    return makeHex(r) + makeHex(g) + makeHex(b);
+  }
+					</code>
+				</pre>
+			</details>
 		</section>
 
 		<section class="list">
