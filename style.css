@@ -14,15 +14,18 @@ footer ul li {
 }
 
 .master {
-	width: 75%;
-	position: absolute;
+	width: 50%;
+	position: relative;
     left: 50%;
-    margin-right: -50%; 
     transform: translateX(-50%);
     font-size: 16px;
     font-family: sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
+    box-shadow: 0px 0px 20px 0px;
+    padding: 15px 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .master h1, h2 {
@@ -36,4 +39,17 @@ footer ul li {
 .list ul {
 	list-style-type: none;
     padding: 0;
+}
+
+.list ul li img:hover {
+	transform: scale(1.2);
+}
+
+.footer {
+    text-align: right;
+    padding-bottom: 1px;
+}
+
+.footer ul li {
+    padding: 0 10px;
 }
