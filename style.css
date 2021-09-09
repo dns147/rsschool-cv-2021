@@ -9,6 +9,24 @@ body {
     background-color: #fffde7;
 }
 
+.nav__list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__link:hover {
+    color: #0c20d8;
+    border-bottom: solid 1px #0c20d8;
+    padding-bottom: 3px;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -34,6 +52,20 @@ footer ul li {
 
 .header__name {
     font-size: 30px;
+}
+
+.contacts ul {
+    width: 270px;
+}
+
+.contacts ul li span {
+    font-size: 40px;
+}
+
+.contacts ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
 .master {
@@ -83,6 +115,7 @@ footer ul li {
 .list ul {
 	list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .list ul li img:hover {
@@ -90,8 +123,8 @@ footer ul li {
 }
 
 .footer {
-    text-align: right;
-    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer ul li {
@@ -99,7 +132,8 @@ footer ul li {
 }
 
 .spoiler pre {
-    width: 302px;
+    width: 268px;
     margin: 0;
     line-height: 1.2;
+    font-size: 12px;
 }
