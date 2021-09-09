@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
+    background-color: #fffde7;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
 }
 
 figure {
-	float: right;
     margin: 0;
 }
 
@@ -13,19 +24,31 @@ footer ul li {
     margin: 0 10px;
 }
 
+.box {
+    background-color: #f1f5e3;
+    box-shadow: inset 0px 0px 20px 0px #92ab92;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header__name {
+    font-size: 30px;
+}
+
 .master {
-	width: 50%;
+    display: flex;
+    flex-direction: column;
+	width: 60%;
 	position: relative;
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Besley', serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
-    box-shadow: 0px 0px 20px 0px;
-    padding: 15px 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .master h1, h2 {
@@ -34,6 +57,27 @@ footer ul li {
 
 .master span {
 	font-weight: bold;
+}
+
+.middle__block {
+    display: flex;
+}
+
+.middle__block__left {
+    flex: 1;
+}
+
+.middle__block__right {
+    flex: 3;
+}
+
+.skills ul {
+    padding-left: 20px;
+}
+
+.foto {
+    border: 10px solid #fffdfd;
+    border-radius: 0px 40px 0px 40px;
 }
 
 .list ul {
@@ -55,7 +99,7 @@ footer ul li {
 }
 
 .spoiler pre {
+    width: 302px;
     margin: 0;
-    line-height: 1.3;
-    background-color: rgb(214, 219, 219);
+    line-height: 1.2;
 }
