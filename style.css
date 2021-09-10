@@ -33,7 +33,7 @@ header {
     line-height: 3.2;
 }
 
-figure {
+.my__foto {
     margin: 0;
 }
 
@@ -42,9 +42,9 @@ figure {
 }
 
 .footer ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
 }
 
 .hr {
@@ -64,10 +64,6 @@ figure {
 
 .header__name {
     font-size: 30px;
-}
-
-.contacts ul {
-    width: 270px;
 }
 
 .contacts ul li span {
@@ -105,6 +101,7 @@ figure {
     line-height: 1.5;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition: width 1s;
 }
 
 .master h1, h2 {
@@ -134,6 +131,7 @@ figure {
 .foto {
     border: 1px solid #88c2c4;
     border-radius: 0px 40px 0px 40px;
+    margin-left: 10px;
 }
 
 .list ul {
@@ -143,7 +141,8 @@ figure {
 }
 
 .list ul li img:hover {
-	transform: scale(1.2);
+	transform: scale(0.8);
+    transition: all 0.2s;
 }
 
 .spoiler pre {
@@ -151,7 +150,7 @@ figure {
     margin: 0;
     line-height: 1.2;
     font-size: 12px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .spoiler summary {
@@ -168,7 +167,43 @@ figure {
     align-items: center;
 }
 
-@media (min-width: 1600px){
+@media only all and (max-width: 1600px) {
+    .master {
+        width: 70%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1500px) {
+    .master {
+        width: 75%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1400px) {
+    .master {
+        width: 80%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1200px) {
+    .master {
+        width: 85%;
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1100px) {
+    .master {
+        width: 90%;
+        transition: all 0.8s;
+    }
+}
+
+@media (min-width: 1000px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -196,8 +231,187 @@ figure {
     }
 }
 
-@media only all and (max-width: 1600px) {
+@media only all and (max-width: 999px) {
     .nav__item:first-child {
         margin-top: 7px;
+    }
+}
+
+@media only all and (max-width: 800px) {
+    .master {
+        font-size: 16px;
+        transition: all 0.8s;
+    }
+
+    .middle__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spoiler pre {
+        width: 100%;
+    }
+}
+
+@media only all and (max-width: 720px) {
+    header {
+        line-height: 2;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 600px) {
+    .master {
+        font-size: 15px;
+        transition: all 0.8s;
+    }
+    .foto {
+        width: 90%;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 26px;
+        transition: all 0.8s;
+    }
+    .projects ul li {
+        transform: scale(0.8);
+    }
+    .footer ul li {
+        transform: scale(0.9);
+    }
+}
+
+@media only all and (max-width: 500px) {
+    header {
+        line-height: 1.7;
+        transition: all 0.8s;
+    }
+    .master {
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+    .foto {
+        width: 85%;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 15px;
+        transition: all 0.8s;
+    }
+    .contacts ul li a span {
+        font-size: 30px;
+        transition: all 0.8s;
+    }
+    .header__p {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 24px;
+        transition: all 0.8s;
+    }
+    .projects ul li {
+        transform: scale(0.7);
+    }
+    .footer ul li {
+        transform: scale(0.8);
+    }
+}
+
+@media only all and (max-width: 450px) {
+    .foto {
+        width: 80%;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+    .header__p {
+        font-size: 12px;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 22px;
+        transition: all 0.8s;
+    }
+    .projects ul li {
+        transform: scale(0.65);
+    }
+    .footer ul li {
+        transform: scale(0.65);
+    }
+    .footer ul {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 20%));
+        justify-content: center;
+        grid-template-rows: 40px;
+    }
+}
+
+@media only all and (max-width: 420px) {
+    .foto {
+        width: 70%;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 18px;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(95px, 20%));
+    }
+}
+
+@media only all and (max-width: 400px) {
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 20%));
+    }
+}
+
+@media only all and (max-width: 380px) {
+    .master {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .footer ul {
+        justify-content: left;
+        grid-template-columns: repeat(auto-fit, minmax(85px, 20%));
+    }
+}
+
+@media only all and (max-width: 360px) {
+    .contacts ul li a {
+        font-size: 12px;
+        transition: all 0.8s;
+    }
+    .projects ul li {
+        transform: scale(0.6);
+    }
+    .footer ul li {
+        transform: scale(0.6);
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 20%));
+    }
+}
+
+@media only all and (max-width: 330px) {
+    .contacts ul li a {
+        font-size: 11px;
+        transition: all 0.8s;
+    }
+    .projects ul li {
+        transform: scale(0.45);
+    }
+    .footer ul li {
+        transform: scale(0.5);
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(63px, 20%));
     }
 }
