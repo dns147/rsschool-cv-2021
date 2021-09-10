@@ -15,7 +15,22 @@ I am highly organized, efficient and proactive. I believe that my taste for lear
 * Databases: Firebase, Firestore
 * Code version control: GIT
   
-## Code examples  
+## Code examples
+```javascript
+function rgb(r, g, b){
+  const makeHex = (num) => {
+    if (num < 0 ) {
+      return "00"; 
+    } else if (num > 255) {
+      return "FF";
+    }
+
+    return ('0' + Number(num).toString(16)).slice(-2).toUpperCase();
+  }
+
+  return makeHex(r) + makeHex(g) + makeHex(b);
+}
+```
 * <https://github.com/dns147/dns147.github.io/blob/main/script/index.js>  
 * <https://github.com/dns147/Learn-Center/blob/main/index.html>
   
@@ -35,4 +50,4 @@ I am highly organized, efficient and proactive. I believe that my taste for lear
 **Description:** Links, Images, Fonts, Borders, Dimensions, Indentation, Background, Tables, Flow, Selectors, Cascading, Display and visibility, Media queries, Adaptive layout, Forms, HTML5, Multimedia, CSS3, Animation, Flex, Grid, Cycles, Functions, Arrays and hashes, DOM.  
   
 ## English Proficiency:  
-Pre-Intermediate
+A2
