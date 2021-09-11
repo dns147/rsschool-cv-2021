@@ -9,6 +9,10 @@ body {
     background-color: #fffde7;
 }
 
+.empty {
+    display: none;
+}
+
 .box {
     background-color: #f1f5e3;
     box-shadow: inset 0px 0px 20px 0px #92ab92;
